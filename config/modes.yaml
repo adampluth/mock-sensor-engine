@@ -1,0 +1,31 @@
+idle:
+  air_temperature: { base: 295, noise: 0.2 }
+  process_temperature: { base: 300, noise: 0.2 }
+  rotational_speed: { base: 500, noise: 5 }
+  torque: { base: 10, noise: 1 }
+  tool_wear: { base: 0, noise: 0 }
+  machine_failure: 0
+
+steady:
+  air_temperature: { base: 300, noise: 0.5 }
+  process_temperature: { base: 310, noise: 0.7 }
+  rotational_speed: { base: 1600, noise: 15 }
+  torque: { base: 40, noise: 2 }
+  tool_wear: { base: 20, noise: 1 }
+  machine_failure: 0
+
+degrading:
+  air_temperature: { base: 305, noise: 1 }
+  process_temperature: { base: 320, noise: 1.5 }
+  rotational_speed: { base: 1500, noise: 50 }
+  torque: { base: 50, noise: 5 }
+  tool_wear: { base: 80, noise: 2 }
+  machine_failure: 0
+
+failure:
+  air_temperature: { base: 310, noise: 2 }
+  process_temperature: { base: 330, noise: 3 }
+  rotational_speed: { base: 1400, noise: 100 }
+  torque: { base: 60, noise: 10 }
+  tool_wear: { base: 100, noise: 3 }
+  machine_failure: 1
